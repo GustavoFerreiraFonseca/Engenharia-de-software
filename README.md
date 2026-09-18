@@ -1,8 +1,7 @@
-Engenharia-de-software
-Repositório destinado as atividades práticas e trabalhos da disciplina de Engenharia de Software.
-Código referente a A1, parte 2.
-Gustavo Ferreira da Fonseca, RA: 2669510
-Planejamento:
+#Engenharia-de-software
+# Código referente a A1, parte 2.
+# Gustavo Ferreira da Fonseca, RA: 2669510
+# Planejamento:
     1. Ler atentamente a A1 parte 1.
     2. Escolher de 1 a 3 requisitos.
     3. Aprender o necessário na linguagem python para implementá-los.
@@ -30,8 +29,8 @@ Planejamento:
                1.2. Sair do aplicativo
                 
   
- Autoavaliação: 
+  # Autoavaliação: 
    1. Consegui ler e aprender um pouco da linguagem.
    2. Consegui começar a desenvolver a classe vaga.
    3. Acabou surgindo diversos erros e tive que deletar algumas coisas e começar de novo.
-#   4. Dessa forma, não completei o requisito 1 ainda.
+   4. Dessa forma, não completei o requisito 1 ainda.
