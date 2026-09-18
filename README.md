@@ -30,3 +30,8 @@ Repositório destinado as atividades práticas e trabalhos da disciplina de Enge
 #               1.2. Sair do aplicativo
 #                
 #  
+# Autoavaliação: 
+#   1. Consegui ler e aprender um pouco da linguagem.
+#   2. Consegui começar a desenvolver a classe vaga.
+#   3. Acabou surgindo diversos erros e tive que deletar algumas coisas e começar de novo.
+#   4. Dessa forma, não completei o requisito 1 ainda.
