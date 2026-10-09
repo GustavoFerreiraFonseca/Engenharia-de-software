@@ -19,17 +19,21 @@
 # na internet, youtube como realizar determinadas coisas em python.
 
 import pytest
-
-from calculadora_desconto import CalculadoraDesconto
+from calculadora_desconto import (
+    CalculadoraPreco,
+    DescontoNenhum,
+    DescontoPercentual,
+    DescontoFixo,
+)
 
 def test_cliente_comum_sem_desconto():
-    calculadora = CalculadoraDesconto()
-    assert calculadora.calcular_total(100.0, tipo_desconto="NENHUM") == 100.0
+    calculadora = CalculadoraPreco(DescontoNenhum())
+    assert calculadora.calcular_total(100.0) == 100.0
 
 def test_cliente_vip_desconto_percentual():
-    calculadora = CalculadoraDesconto()
-    assert calculadora.calcular_total(100.0, tipo_desconto="PREMIUM", percentual=10) == 90.0
+    calculadora = CalculadoraPreco(DescontoPercentual(10)) # 10% de desconto
+    assert calculadora.calcular_total(100.0) == 90.0
 
 def test_cupom_desconto_valor_fixo():
-    calculadora = CalculadoraDesconto()
-    assert calculadora.calcular_total(100.0, tipo_desconto="CUPOM", valor_cupom=20.0) == 80.0
+    calculadora = CalculadoraPreco(DescontoFixo(20.0)) # R$ 20.00 de desconto
+    assert calculadora.calcular_total(100.0) == 80.0
